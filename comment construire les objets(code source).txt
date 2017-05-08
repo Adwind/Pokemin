@@ -1,0 +1,181 @@
+  //faire objet
+  dim i as byte//boucle for
+  
+  //faire branche
+  if ch(1).backdrop=bois and ch(4).backdrop=bois or ch(2).backdrop=bois and ch(5).backdrop=bois or ch(3).backdrop=bois and ch(6).backdrop=bois or ch(4).backdrop=bois and ch(7).backdrop=bois or ch(5).backdrop=bois and ch(8).backdrop=bois or ch(6).backdrop=bois and ch(9).backdrop=bois then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 3
+    
+    // faire encen vide
+  elseif  ch(2).backdrop=branche and  ch(4).backdrop=branche and  ch(6).backdrop=branche and  ch(5).backdrop=metal and  ch(7).backdrop=bois and  ch(8).backdrop=bois and  ch(9).backdrop=bois then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 18
+    
+    //encen remplis ...
+    //encen vision (prairie)
+  elseif ch(1).backdrop=trefle and ch(4).backdrop=encenvide or ch(2).backdrop=trefle and ch(5).backdrop=encenvide or ch(3).backdrop=trefle and ch(6).backdrop=encenvide or ch(4).backdrop=trefle and ch(7).backdrop=encenvide or ch(5).backdrop=trefle and ch(8).backdrop=encenvide or ch(6).backdrop=trefle and ch(9).backdrop=encenvide then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 20
+    
+    //encen calme(forêt)
+  elseif ch(1).backdrop=bois and ch(4).backdrop=encenvide or ch(2).backdrop=bois and ch(5).backdrop=encenvide or ch(3).backdrop=bois and ch(6).backdrop=encenvide or ch(4).backdrop=bois and ch(7).backdrop=encenvide or ch(5).backdrop=bois and ch(8).backdrop=encenvide or ch(6).backdrop=bois and ch(9).backdrop=encenvide then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 21
+    
+    //encen putride(marécage)
+  elseif ch(1).backdrop=feuille and ch(4).backdrop=encenvide or ch(2).backdrop=feuille and ch(5).backdrop=encenvide or ch(3).backdrop=feuille and ch(6).backdrop=encenvide or ch(4).backdrop=feuille and ch(7).backdrop=encenvide or ch(5).backdrop=feuille and ch(8).backdrop=encenvide or ch(6).backdrop=feuille and ch(9).backdrop=encenvide then
+     
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 22
+    
+    //encen terre(montagne)
+  elseif ch(1).backdrop=roche and ch(4).backdrop=encenvide or ch(2).backdrop=roche and ch(5).backdrop=encenvide or ch(3).backdrop=roche and ch(6).backdrop=encenvide or ch(4).backdrop=roche and ch(7).backdrop=encenvide or ch(5).backdrop=roche and ch(8).backdrop=encenvide or ch(6).backdrop=roche and ch(9).backdrop=encenvide then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 23
+    
+    //encen flamme(volcan)
+  elseif ch(1).backdrop=pierrevolcanique and ch(4).backdrop=encenvide or ch(2).backdrop=pierrevolcanique and ch(5).backdrop=encenvide or ch(3).backdrop=pierrevolcanique and ch(6).backdrop=encenvide or ch(4).backdrop=pierrevolcanique and ch(7).backdrop=encenvide or ch(5).backdrop=pierrevolcanique and ch(8).backdrop=encenvide or ch(6).backdrop=pierrevolcanique and ch(9).backdrop=encenvide then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 24
+    
+    // pokéball
+  elseif ch(2).backdrop=metal and ch(4).backdrop=metal and ch(6).backdrop=metal and ch(5).backdrop=lave and ch(8).backdrop=bois then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 16
+    
+    //masterball
+  elseif ch(2).backdrop=metal and ch(4).backdrop=metal and ch(6).backdrop=metal and ch(5).backdrop=lave and ch(8).backdrop=metal and ch(1).Backdrop=pokeball or  ch(2).backdrop=metal and ch(4).backdrop=metal and ch(6).backdrop=metal and ch(5).backdrop=lave and ch(8).backdrop=metal and ch(3).Backdrop=pokeball or ch(2).backdrop=metal and ch(4).backdrop=metal and ch(6).backdrop=metal and ch(5).backdrop=lave and ch(8).backdrop=metal and ch(7).Backdrop=pokeball or ch(2).backdrop=metal and ch(4).backdrop=metal and ch(6).backdrop=metal and ch(5).backdrop=lave and ch(8).backdrop=metal and ch(9).Backdrop=pokeball then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 17
+    
+    //potion vide
+  elseif ch(8).backdrop=lave and ch(1).backdrop=sable and ch(5).backdrop=sable and ch(3).backdrop=sable then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 27
+    
+    //potion faible
+  elseif ch(1).backdrop=eau and ch(4).backdrop=potionvide or ch(2).backdrop=eau and ch(5).backdrop=potionvide or ch(3).backdrop=eau and ch(6).backdrop=potionvide or ch(4).backdrop=eau and ch(7).backdrop=potionvide or ch(5).backdrop=eau and ch(8).backdrop=potionvide or ch(6).backdrop=eau and ch(9).backdrop=potionvide then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 13
+    
+    //potion 
+  elseif ch(2).backdrop=herbes1 and ch(5).backdrop=potionfaible and ch(8).backdrop=lave and ch(4).backdrop=feuille and ch(2).backdrop=feuille then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 14
+    
+    //potion forte
+  elseif ch(2).backdrop=pierrevolcanique and ch(5).backdrop=potion and ch(8).backdrop=lave and ch(4).backdrop=roche and ch(2).backdrop=roche then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 15
+    
+    //canne à pêche
+  elseif ch(7).backdrop=branche and ch(5).backdrop=branche and ch(3).backdrop=branche and ch(6).backdrop=herbes1 and ch(9).backdrop=herbes1 then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 19
+    
+    //flute
+  elseif ch(1).Backdrop=bois and ch(3).Backdrop=bois and ch(4).Backdrop=bois and ch(6).Backdrop=bois and ch(7).Backdrop=bois and ch(9).Backdrop=bois and  ch(2).Backdrop=pierrevolcanique and ch(8).Backdrop=metal then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 25
+    
+    //flute pokémon
+  elseif ch(1).backdrop=flute and ch(4).backdrop=pokeball or ch(2).backdrop=flute and ch(5).backdrop=pokeball or ch(3).backdrop=flute and ch(6).backdrop=pokeball or ch(4).backdrop=flute and ch(7).backdrop=pokeball or ch(5).backdrop=flute and ch(8).backdrop=pokeball or ch(6).backdrop=flute and ch(9).backdrop=pokeball then
+    
+    for i=1 to 9
+      
+      ch(i).backdrop=nil
+      
+    next i
+    
+    return 26
+    
+  end if
